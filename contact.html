@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Fresh</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h1><i class="fa-solid fa-seedling"></i> Farm Fresh</h1>
+          
+          <!-- Navigation Menu -->
+          <nav>
+            <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="produce.html">Produce</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="theme-toggle-nav">
+                <button class="theme-toggle mobile-only" id="themeToggleMobile">
+                  <i class="fa-solid fa-moon"></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="theme-toggle desktop-only" id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Form Section Start -->
+    <section class="form-section">
+      <div class="container">
+        <div class="form-container">
+          <h2 style="text-align: center; margin-bottom: 2rem">
+            Contact Us for Fresh Produce
+          </h2>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" required />
+              <div class="error-message" id="nameError"></div>
+              <div class="success-message" id="nameSuccess">
+                <i class="fa-solid fa-check"></i> Name looks good!
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required />
+              <div class="error-message" id="emailError"></div>
+              <div class="success-message" id="emailSuccess">
+                <i class="fa-solid fa-check"></i> Valid email address!
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required />
+              <div class="error-message" id="phoneError"></div>
+              <div class="success-message" id="phoneSuccess">
+                <i class="fa-solid fa-check"></i> Valid phone number!
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="produceType">Interested In *</label>
+              <select id="produceType" name="produceType" required>
+                <option value="">Select produce type...</option>
+                <option value="vegetables">Fresh Vegetables</option>
+                <option value="fruits">Seasonal Fruits</option>
+                <option value="herbs">Organic Herbs</option>
+                <option value="bulk">Bulk Orders</option>
+                <option value="tour">Farm Tours</option>
+              </select>
+              <div class="error-message" id="produceError"></div>
+              <div class="success-message" id="produceSuccess">
+                <i class="fa-solid fa-check"></i> Selection confirmed!
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="quantity">Estimated Quantity (kg)</label>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                max="1000"
+              />
+              <div class="error-message" id="quantityError"></div>
+              <div class="success-message" id="quantitySuccess">
+                <i class="fa-solid fa-check"></i> Valid quantity!
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell us about your needs or ask any questions..."
+              ></textarea>
+              <div class="success-message" id="messageSuccess">
+                <i class="fa-solid fa-check"></i> Message added!
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn"
+              style="width: 100%; font-size: 1.1rem"
+            >
+              Send Inquiry
+            </button>
+
+            <div
+              id="formSuccess"
+              style="
+                display: none;
+                text-align: center;
+                margin-top: 1rem;
+                padding: 1rem;
+                background: #d4edda;
+                border: 1px solid #c3e6cb;
+                border-radius: 5px;
+                color: #155724;
+              "
+            >
+              <strong>Thank you!</strong> Your inquiry has been submitted
+              successfully. We'll contact you within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Farm Fresh. Fresh, Organic, Local.
+          <i class="fa-solid fa-seedling"></i>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
