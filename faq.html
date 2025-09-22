@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Fresh</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h1><i class="fa-solid fa-seedling"></i> Farm Fresh</h1>
+          
+          <!-- Navigation Menu -->
+          <nav>
+            <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="produce.html">Produce</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="theme-toggle-nav">
+                <button class="theme-toggle mobile-only" id="themeToggleMobile">
+                  <i class="fa-solid fa-moon"></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="theme-toggle desktop-only" id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- FAQ Section Start -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem">
+          Frequently Asked Questions
+        </h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What types of produce do you grow?</span>
+              <span class="faq-icon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              We grow a variety of seasonal vegetables including tomatoes,
+              lettuce, carrots, peppers, and herbs. We also have fruit trees
+              producing apples, pears, and seasonal berries.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Are your products organic?</span>
+              <span class="faq-icon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              Yes! All our produce is certified organic. We use natural farming
+              methods without synthetic pesticides or fertilizers, ensuring the
+              highest quality for our customers.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you offer farm tours?</span>
+              <span class="faq-icon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              Absolutely! We offer guided tours every Saturday at 10 AM and 2
+              PM. Tours include a walk through our fields, greenhouse visit, and
+              fresh produce tasting.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What are your market hours?</span>
+              <span class="faq-icon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              Our farm stand is open Tuesday through Sunday, 8 AM to 6 PM. We're
+              closed on Mondays for restocking and maintenance.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Farm Fresh. Fresh, Organic, Local.
+          <i class="fa-solid fa-seedling"></i>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
