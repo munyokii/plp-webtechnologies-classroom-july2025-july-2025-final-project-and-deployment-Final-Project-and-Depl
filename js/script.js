@@ -34,6 +34,21 @@ document.addEventListener('click', function(e) {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const navLinks = document.querySelectorAll(".nav-menu a");
+  let currentPath = window.location.pathname.split("/").pop(); 
+
+  if (currentPath === "" || currentPath === "/") {
+    currentPath = "index.html";
+  }
+
+  navLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPath) {
+      link.classList.add("active");
+    }
+  });
+});
+
 // Theme toggle
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;

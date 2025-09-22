@@ -63,7 +63,6 @@ header {
   z-index: 1000;
 }
 
-/* Header content layout */
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -71,14 +70,12 @@ header {
   position: relative;
 }
 
-/* Navigation Menu - center it */
 nav {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* Desktop theme toggle */
 .desktop-only {
   display: block;
 }
@@ -87,7 +84,6 @@ nav {
   display: none;
 }
 
-/* Theme Toggle in Navigation - hide on desktop */
 .theme-toggle-nav {
   display: none;
 }
@@ -113,6 +109,12 @@ nav {
   padding: 0.5rem 0;
   transition: all 0.3s ease;
   position: relative;
+}
+
+.nav-menu a.active {
+  color: var(--accent-color);
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .nav-menu a:hover {
