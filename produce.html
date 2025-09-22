@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Fresh</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h1><i class="fa-solid fa-seedling"></i> Farm Fresh</h1>
+          
+          <!-- Navigation Menu -->
+          <nav>
+            <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="produce.html">Produce</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="theme-toggle-nav">
+                <button class="theme-toggle mobile-only" id="themeToggleMobile">
+                  <i class="fa-solid fa-moon"></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="theme-toggle desktop-only" id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Produce Section Start -->
+    <section class="tabs-section">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem">
+          Our Seasonal Produce
+        </h2>
+        <div class="tab-buttons">
+          <button class="tab-button active" data-tab="spring">
+            <i class="fa-solid fa-seedling"></i> Spring
+          </button>
+          <button class="tab-button" data-tab="summer">
+            <i class="fa-solid fa-sun"></i> Summer
+          </button>
+          <button class="tab-button" data-tab="fall">
+            <i class="fa-solid fa-leaf"></i> Fall
+          </button>
+          <button class="tab-button" data-tab="winter">
+            <i class="fa-solid fa-snowflake"></i> Winter
+          </button>
+        </div>
+
+        <div class="tab-content active" id="spring">
+          <h3>Spring Harvest</h3>
+          <p>Fresh spring vegetables perfect for healthy meals</p>
+          <div class="produce-grid">
+            <div class="produce-item">Coriander</div>
+            <div class="produce-item">Carrots</div>
+            <div class="produce-item">Herbs</div>
+            <div class="produce-item">Cucumbers</div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="summer">
+          <h3>Summer Bounty</h3>
+          <p>Sun-ripened vegetables at their peak flavor</p>
+          <div class="produce-grid">
+            <div class="produce-item">Tomatoes</div>
+            <div class="produce-item">Bell Peppers</div>
+            <div class="produce-item">Corn</div>
+            <div class="produce-item">Strawberries</div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="fall">
+          <h3>Fall Harvest</h3>
+          <p>Hearty vegetables perfect for autumn cooking</p>
+          <div class="produce-grid">
+            <div class="produce-item">Pumpkins</div>
+            <div class="produce-item">Apples</div>
+            <div class="produce-item">Onions</div>
+            <div class="produce-item">Potatoes</div>
+            <div class="produce-item">Broccoli</div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="winter">
+          <h3>Winter Storage</h3>
+          <p>Preserved and stored produce for the cold months</p>
+          <div class="produce-grid">
+            <div class="produce-item">Winter Greens</div>
+            <div class="produce-item">Stored Carrots</div>
+            <div class="produce-item">Garlic</div>
+            <div class="produce-item">Stored Potatoes</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Produce Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Farm Fresh. Fresh, Organic, Local.
+          <i class="fa-solid fa-seedling"></i>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
