@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Fresh</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h1><i class="fa-solid fa-seedling"></i> Farm Fresh</h1>
+          
+          <!-- Navigation Menu -->
+          <nav>
+            <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="produce.html">Produce</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="theme-toggle-nav">
+                <button class="theme-toggle mobile-only" id="themeToggleMobile">
+                  <i class="fa-solid fa-moon"></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="theme-toggle desktop-only" id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section Start -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>
+              <i class="fa-solid fa-tractor"></i>
+              Our Story of Sustainable Farming
+            </h2>
+            <p class="about-intro">
+              For over 2 years, Farm Fresh has been committed to bringing you the 
+              highest quality organic produce while maintaining sustainable farming 
+              practices that respect our environment and community.
+            </p>
+            
+            <div class="about-details">
+              <div class="about-item">
+                <i class="fa-solid fa-seedling"></i>
+                <div>
+                  <h4>Sustainable Practices</h4>
+                  <p>We use regenerative farming techniques that improve soil health, 
+                  conserve water, and support local wildlife habitats.</p>
+                </div>
+              </div>
+              
+              <div class="about-item">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                  <h4>Community Focused</h4>
+                  <p>Supporting local families with fresh, affordable produce while 
+                  creating jobs and strengthening our rural community.</p>
+                </div>
+              </div>
+              
+              <div class="about-item">
+                <i class="fa-solid fa-certificate"></i>
+                <div>
+                  <h4>Certified Organic</h4>
+                  <p>USDA certified organic since 1995, ensuring the highest 
+                  standards for your family's health and nutrition.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="about-cta">
+              <a href="contact.html" class="btn">
+                <i class="fa-solid fa-envelope"></i> Get In Touch
+              </a>
+              <a href="faq.html" class="btn btn-outline">
+                <i class="fa-solid fa-question-circle"></i> Learn More
+              </a>
+            </div>
+          </div>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Varieties Grown</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Happy Families</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Organic Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Farm Fresh. Fresh, Organic, Local.
+          <i class="fa-solid fa-seedling"></i>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
